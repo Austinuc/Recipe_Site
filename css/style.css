@@ -10,7 +10,8 @@ main {
     /* margin: -10px; */
     padding: 0 10px;
 }
-header {background-color: #F2EEE9;
+
+header{background-color: #F2EEE9;
     position: sticky;
     top: 0;
     display: flex;
@@ -20,6 +21,7 @@ header {background-color: #F2EEE9;
     
 }
 .fa-bars {
+    display: none;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -32,17 +34,21 @@ header nav {
 header button {
     margin: 5px 10px 0 10px;
 }
-@media screen and (max-width: 860px) {
-    header {
-        /* display: none; */
+@media screen and (max-width: 900px) {
+    .mobile-menu.mobile-toggle {
+        display: flex;
         flex-direction: column;
-        z-index: 100;
-        /* position: relative; */
+        position: absolute;
         align-items: flex-start;
-        height: 100%;
+        height: auto;
         padding: 10px 0 20px 0;
-        
-        
+        margin: -20px 0 0 -10px;  
+    }
+    .fa-bars {
+        display: block;
+    }
+    header.mobile-menu {
+        display: none;
     }
     header nav menu {
         display: flex;
@@ -91,7 +97,7 @@ header nav {
     flex: 3 1 auto;
 }
 header button {
-    width: 100px;
+    width: 200px;
     flex: 0 1 auto;
     height: 50px;
     /* flex-basis: 0px; */
