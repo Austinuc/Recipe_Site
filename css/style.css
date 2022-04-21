@@ -2,30 +2,83 @@ body {
     background-color: #EF3E16;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
 main {
     background-color: #F2EEE9;
     /* margin: -10px; */
     padding: 0 10px;
 }
-header {
+header {background-color: #F2EEE9;
+    position: sticky;
+    top: 0;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
-    margin: -10px;
-    height: 100px;
+    /* margin: -10px -10px 0 0; */
+    height: auto;
+    
 }
-header > * {
-    margin: 10px;
+.fa-bars {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 34px;
 }
-@media screen and (max-width: 768px) {
+header nav {
+    margin: 10px 10px 0 10px;
+    width: 200px;
+}
+header button {
+    margin: 5px 10px 0 10px;
+}
+@media screen and (max-width: 860px) {
     header {
+        /* display: none; */
+        flex-direction: column;
+        z-index: 100;
+        /* position: relative; */
+        align-items: flex-start;
+        height: 100%;
+        padding: 10px 0 20px 0;
+        
+        
+    }
+    header nav menu {
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
-        align-items: center;
-        /* margin: -10px;
-        height: 100px; */
+        align-items: flex-start;
+        list-style: none;
+        margin-left: -40px;
+        height: 100%;
+        
+    }
+    .social-icons {
+        font-size: 20px;
+        width: 100%;
+        border-top: 1px solid black;
+        margin-right: auto;
+        margin-left: 0 !important;
+    }
+    .social-icons i {
+        padding: 10px 10px 0 0;
+    }
+    #nav-bar li {
+        margin-bottom: 20px;
+        font-size: 18px;
+        /* flex: 1 1 auto; */
+    }
+    #nav-bar li:nth-last-child(2) {
+        margin-bottom: 60%;
+    }
+    header h1 {
+        display: none;
+    }
+    button.contact {
+        /* padding: 10px; */
+        /* flex: 0 1 auto; */
+        /* width: 100px;
+        height: 50px; */
     }
 }
 header h1 {
@@ -52,11 +105,16 @@ header nav menu {
 }
 
 .social-icons {
+    font-size: 20px;
     margin-left: auto;
 }
 .social-icons i {
     margin: 0 5px;
 }
+.social-icons i:nth-last-child(1) {
+    margin: 0 20px 0 5px;
+}
 #nav-bar li {
     padding: 0 10px;
+    font-size: 20px;
 }
