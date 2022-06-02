@@ -13,4 +13,3 @@ The entire web content layout was structured with CSS grid and flexbox; starting
 * **SEO optimized:** The entire web contents were semantically tagged appropriately with the recommended HTML5 elements.
 * **Mobile Navigation Menu:** Responsive mobile navigation menu with a toggle functionality built with CSS and JavaScript.
 * **Grid & Flex Box Content Layouts** 
-
